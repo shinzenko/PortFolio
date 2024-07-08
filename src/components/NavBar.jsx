@@ -8,7 +8,7 @@ export const NavBar = () => {
       <div className="logo">
         <img src={file} alt="logo" className="image" />
       </div>
-      <div className="links flex gap-10 md:hidden">
+      <div className="flex gap-10 md:hidden">
         {["Projects", "About Me", "Experience", "Contact Me"].map(
           (item, index) => {
             return (

@@ -1,4 +1,4 @@
-import React from "react";
+
 import profile from "../assets/profile.jfif";
 import { motion } from "framer-motion";
 const AboutMe = () => {
