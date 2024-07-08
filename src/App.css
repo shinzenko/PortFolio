@@ -1,0 +1,48 @@
+.image{
+  width: 120px;
+  height: 100px;
+  margin-top: -30px;
+}
+.sha{
+background: #0f0f0f;
+box-shadow:  5px 5px 20px #060606,
+             -5px -5px 10px #181818;
+}
+.back:hover{
+  transform: rotateZ(-2.5deg);
+  transition:transform 0.5s ease-in 3s normal;
+}
+
+.btn_xp:hover > span{
+  color: rgba(255,1,79,0.8);
+}
+
+.btn_xp:focus{
+  border-left: 1px solid rgba(255,1,79,1);
+}
+
+.arrow{
+  rotate: 45deg;
+  width: 10px;
+}
+
+.shad{
+  box-shadow:  5px 5px 15px #1f1f1f,
+               -5px -5px 15px #1f1f1f;
+}
+:root{
+  scrollbar-color:#343434 #121212;
+  scrollbar-width: thin;
+}
+.hide {
+  transform: translateY(-110px);
+}
+.top{
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.end{
+  justify-content: flex-end;
+}
