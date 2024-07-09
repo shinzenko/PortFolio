@@ -31,7 +31,7 @@ const ContactMe = () => {
       <motion.div
         ref={Project}
         style={{ opacity: scaleTransform }}
-        className="mx-auto w-full mt-[7rem] bg-[#121212] px-20"
+        className="mx-auto w-full mt-[7rem] bg-[#121212] px-20 md:px-5"
         id="Contact Me"
       >
         <div className="flex items-center">

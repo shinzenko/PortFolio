@@ -25,7 +25,7 @@ const Experience = () => {
         ref={experience}
         style={{ opacity: scaleTransform }}
         viewport={{ once: true }}
-        className="mx-auto w-full mb-40 px-20"
+        className="mx-auto w-full mb-40 px-20 md:px-5"
       >
         <div className="flex items-center">
           <h1 className="text-[3rem] text-[#e1e1e1] font-['Baskervville_SC'] md:text-[2rem]">
@@ -38,7 +38,7 @@ const Experience = () => {
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-10 mx-auto bg-[#121212] flex flex-col md:flex-row"
+          className="mt-10 bg-[#121212] flex flex-col md:flex-row mx-4 md:w-[90%] "
         >
           {data.map((item) => {
             return (

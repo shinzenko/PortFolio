@@ -7,18 +7,18 @@ import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 const Project = () => {
   const { scrollYProgress } = useScroll();
-  const scaleTransform = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scaleTransform = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
   const Project = useRef();
   return (
     <motion.div
       ref={Project}
       style={{ opacity: scaleTransform }}
       viewport={{ once: true }}
-      className="mx-auto w-full mt-[15rem] bg-[#121212] px-20"
+      className="mx-auto w-full mt-[15rem] bg-[#121212] px-20 md:px-5"
       id="Projects"
     >
       <div className="flex items-center">
-        <h1 className="text-[3rem] text-[#e1e1e1] font-['Baskervville_SC'] md:text-[2rem]">
+        <h1 className="text-[3rem] font-['Baskervville_SC'] md:text-[2rem]">
           Projects
         </h1>
         <div className="w-[20rem] bg-[rgba(255,1,79,0.8)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
@@ -27,7 +27,7 @@ const Project = () => {
         return (
           <div
             key={project.id}
-            className="mx-auto mt-10 flex justify-center md:flex-col md:items-center bg-red"
+            className="mt-10 flex justify-center md:flex-col md:items-center "
           >
             <motion.div
               initial={{ x: -200 }}
@@ -38,7 +38,7 @@ const Project = () => {
               <img
                 src={project.image}
                 alt="Movix"
-                className="w-[80rem] mb-5 md:w-[90rem]"
+                className="w-[80rem] mb-5 md:w-[140rem]"
               />
             </motion.div>
             <motion.div
@@ -50,27 +50,28 @@ const Project = () => {
             >
               <div className="bg[#242424] -ml-[2.5rem]">
                 <div className="lg:mx-6">
-                <div className="flex items-center ">
-                  <h1 className="text-[rgba(255,1,79,1)] text-[3rem] transition-all duration-500 -mt-3 mb-3">
-            
+                  <div className="flex items-center ">
+                    <h1 className="text-[rgba(255,1,79,1)] text-[3rem] transition-all duration-500 -mt-3 mb-3 md:text-[2rem]">
                       {project.title}
-                  </h1>
-                  <a
-                      href="https://github.com/shinzenko/Movix/"
-                      className="hover:underline ml-[9rem] mb-3"
-                      target="_blank"
-                    >
-                    <FaGithub size={18} color="rgba(255,1,79,1)"/>
-                    </a>
-                    <a
-                      href="https://movixwebsite.netlify.app/"
-                      className="hover:underline ml-5 mb-3"
-                      target="_blank"
-                    >
-                    <FaExternalLinkAlt size={18} color="rgba(255,1,79,1)"/>
-                    </a>
-                </div>
-                  <div className="bg-[#242424] py-6 px-3 shad">
+                    </h1>
+                    <div className="flex items-center justify-center ml-20 md:-mt-1">
+                      <a
+                        href="https://github.com/shinzenko/Movix/"
+                        className="hover:underline mb-3 "
+                        target="_blank"
+                      >
+                        <FaGithub size={18} color="rgba(255,1,79,1)" />
+                      </a>
+                      <a
+                        href="https://movixwebsite.netlify.app/"
+                        className="hover:underline ml-6 mb-3"
+                        target="_blank"
+                      >
+                        <FaExternalLinkAlt size={18} color="rgba(255,1,79,1)" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="bg-[#242424] py-6 px-3 shad font-['Neue_Montreal']">
                     <span>{project.description}</span>
                   </div>
                 </div>
