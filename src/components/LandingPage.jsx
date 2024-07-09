@@ -22,7 +22,7 @@ const LandingPage = () => {
           {" "}
           I&apos;m <span className="text-[rgb(255,1,79)]" ref={el}></span>
         </h1>
-        <div className="flex flex-wrap w-[45vw] text-[1.3em] mt-5 leading-8 md:text-[1rem]">
+        <div className="flex flex-wrap w-[45vw] text-[1.3em] mt-5 leading-8 md:text-[1rem] md:w-[90%]">
           <span className="font-['Baskervville_SC']">
             I am a goal-oriented web developer who is committed to high
             standards of user experience, usability and speed for multiple
