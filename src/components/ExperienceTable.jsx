@@ -7,9 +7,9 @@ const ExperienceTable = ({ item, selectedId }) => {
         selectedId !== item.id ? "hidden" : ""
       } mx-4 flex flex-col ml-4 my-2 md:mx-2 md:w-[130%] md:mx-0 bg-[#242424] shad py-3 px-2`}
     >
-      <div className="flex md:w-[100%]">
+      <div className="flex md:w-[100%] ">
         <h4 className="font-['Baskervville_SC'] md:ml-2">{item.role}</h4>
-        <span className="text-[rgba(255,1,79,1)] font-bold ml-2">
+        <span className="text-[rgb(255,1,79)] font-bold ml-2">
           <a href={item.url} className="hover:underline md:text-[0.9rem]">
             @{item.company}
           </a>
@@ -22,7 +22,7 @@ const ExperienceTable = ({ item, selectedId }) => {
       </div>
       <ul
         role="list"
-        className="marker:text-[rgba(255,1,79,1)] list-decimal list-inside"
+        className="marker:text-[rgb(255,1,79)] list-decimal list-inside"
       >
         {item.task.map((content) => {
           return (

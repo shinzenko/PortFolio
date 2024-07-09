@@ -38,7 +38,7 @@ const ContactMe = () => {
           <h1 className="text-[3rem] text-[#e1e1e1] font-['Baskervville_SC'] md:text-[2rem]">
             Contact Me
           </h1>
-          <div className="w-[30%] mr-10 bg-[rgba(255,1,79,0.8)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
+          <div className="w-[30%] mr-10 bg-[rgb(255,1,79)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
         </div>
 
         <section className="dark:bg-[#121212] mx-auto mt-5">
@@ -46,7 +46,7 @@ const ContactMe = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgba(255,1,79,1)]"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgb(255,1,79)]"
               >
                 Your name
               </label>
@@ -62,7 +62,7 @@ const ContactMe = () => {
             <div>
               <label
                 htmlFor="subject"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgba(255,1,79,1)]"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgb(255,1,79)]"
               >
                 Email
               </label>
@@ -78,7 +78,7 @@ const ContactMe = () => {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgba(255,1,79,1)]"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-[rgb(255,1,79)]"
               >
                 Your message
               </label>

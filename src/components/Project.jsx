@@ -21,7 +21,7 @@ const Project = () => {
         <h1 className="text-[3rem] font-['Baskervville_SC'] md:text-[2rem]">
           Projects
         </h1>
-        <div className="w-[20rem] bg-[rgba(255,1,79,0.8)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
+        <div className="w-[20rem] bg-[rgb(255,1,79)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
       </div>
       {projects.map((project) => {
         return (
@@ -51,7 +51,7 @@ const Project = () => {
               <div className="bg[#242424] -ml-[2.5rem]">
                 <div className="lg:mx-6">
                   <div className="flex items-center ">
-                    <h1 className="text-[rgba(255,1,79,1)] text-[3rem] transition-all duration-500 -mt-3 mb-3 md:text-[2rem]">
+                    <h1 className="text-[rgb(255,1,79)] text-[3rem] transition-all duration-500 -mt-3 mb-3 md:text-[2rem]">
                       {project.title}
                     </h1>
                     <div className="flex items-center justify-center ml-20 md:-mt-1">
@@ -60,14 +60,14 @@ const Project = () => {
                         className="hover:underline mb-3 "
                         target="_blank"
                       >
-                        <FaGithub size={18} color="rgba(255,1,79,1)" />
+                        <FaGithub size={18} color="rgb(255,1,79)" />
                       </a>
                       <a
                         href="https://movixwebsite.netlify.app/"
                         className="hover:underline ml-6 mb-3"
                         target="_blank"
                       >
-                        <FaExternalLinkAlt size={18} color="rgba(255,1,79,1)" />
+                        <FaExternalLinkAlt size={18} color="rgb(255,1,79)" />
                       </a>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ const Project = () => {
                     <span>{project.description}</span>
                   </div>
                 </div>
-                <div className="flex item-center gap-5 text-[rgba(255,1,79,1)] mt-4 lg:mx-6">
+                <div className="flex item-center gap-5 text-[rgb(255,1,79)] mt-4 lg:mx-6">
                   {project.technology.map((content, index) => {
                     return (
                       <div
