@@ -17,7 +17,7 @@ const LandingPage = () => {
   }, []);
   return (
     <div className="w-full bg-[#121212] pt-1">
-      <div className="textstructure mt-40 px-20">
+      <div className="textstructure mt-40 px-20 md:px-5">
         <h1 className="text-[5rem] font-['Baskervville_SC'] capitalize md:text-[3rem]">
           {" "}
           I&apos;m <span className="text-[rgb(255,1,79)]" ref={el}></span>
