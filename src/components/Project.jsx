@@ -71,7 +71,7 @@ const Project = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="bg-[#242424] py-6 px-3 shad font-['Neue_Montreal']">
+                  <div className="bg-[#242424] py-6 px-3 font-['Neue_Montreal'] shad">
                     <span>{project.description}</span>
                   </div>
                 </div>

@@ -5,7 +5,7 @@ const ExperienceTable = ({ item, selectedId }) => {
     <div
       className={`${
         selectedId !== item.id ? "hidden" : ""
-      } mx-4 flex flex-col ml-4 my-2 md:mx-2 md:w-[130%] md:mx-0 bg-[#242424] shad py-3 px-2`}
+      } mx-4 flex flex-col ml-4 my-2 md:mx-2 md:w-[130%] md:mx-0 bg-[#242424] py-3 px-2 shad`}
     >
       <div className="flex md:w-[100%] ">
         <h4 className="font-['Baskervville_SC'] md:ml-2">{item.role}</h4>

@@ -56,7 +56,7 @@ const Experience = () => {
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="w-[75%] bg-[#1c1c1c] shad float-right -mt-[8rem] md:float-none md:mt-10 lg:z-[20]"
+          className="w-[75%] float-right -mt-[8rem] md:float-none md:mt-10 lg:z-[20]"
         >
           <ExperienceTable item={item} selectedId={selectedId} />
         </motion.div>
