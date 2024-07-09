@@ -31,7 +31,7 @@ const Experience = () => {
           <h1 className="text-[3rem] text-[#e1e1e1] font-['Baskervville_SC'] md:text-[2rem]">
             Experience
           </h1>
-          <div className="w-[20rem] bg-[rgba(255,1,79,0.8)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
+          <div className="w-[20rem] bg-[rgb(255,1,79)] h-[1px] mt-4 ml-4 md:w-[10rem]"></div>
         </div>
         <motion.div
           initial={{ x: -200 }}
