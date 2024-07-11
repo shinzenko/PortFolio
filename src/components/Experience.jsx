@@ -18,7 +18,6 @@ const Experience = () => {
     setItem(val);
   };
   const scaleTransform = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  console.log(data);
   return (
     <section id="Experience" className="mt-[7rem]">
       <motion.div

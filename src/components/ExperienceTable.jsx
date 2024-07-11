@@ -1,6 +1,5 @@
 import "../App.css";
 const ExperienceTable = ({ item, selectedId }) => {
-  console.log("select", item);
   return (
     <div
       className={`${
