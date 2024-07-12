@@ -30,7 +30,7 @@ const LandingPage = () => {
           </span>
         </div>
         <button className="bg-[rgb(255,1,79)] px-3 py-3 rounded-lg mt-10 text-[#f6f6f6] back">
-          <a href="../assets/Resume.pdf" download="" type="application/pdf">
+          <a href="../Downloads/Resume.pdf" download="" type="application/pdf">
             Download CV
           </a>
         </button>
