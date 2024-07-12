@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
+import Resume from "../Downloads/Resume.pdf";
 const LandingPage = () => {
   const el = React.useRef(null);
 
@@ -30,7 +31,7 @@ const LandingPage = () => {
           </span>
         </div>
         <button className="bg-[rgb(255,1,79)] px-3 py-3 rounded-lg mt-10 text-[#f6f6f6] back">
-          <a href="../Downloads/Resume.pdf" download="" type="application/pdf">
+          <a href={Resume} download type="application/pdf">
             Download CV
           </a>
         </button>
