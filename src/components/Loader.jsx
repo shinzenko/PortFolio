@@ -29,9 +29,16 @@ const Loader = () => {
         transition={{ duration: 0.5, delay: 2.3 }}
       >
         <span className="loading">
-          <div className="logo">
+          <motion.div
+            className="logo"
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 2 },
+            }}
+          >
             <img src={file} alt="logo" className="loader-image" />
-          </div>
+          </motion.div>
         </span>
         <div className="progress_bar">
           <div
