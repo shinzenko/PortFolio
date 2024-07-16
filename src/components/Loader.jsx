@@ -11,7 +11,7 @@ const Loader = () => {
         return;
       }
       setCount((prev) => prev + 1);
-    }, 20);
+    }, 15);
     return () => {
       clearInterval(myInterval);
     };
@@ -26,7 +26,7 @@ const Loader = () => {
           scale: 1.25,
           borderRadius: ["25px", "20px", "20px", "10px", "0px"],
         }}
-        transition={{ duration: 0.5, delay: 2.3 }}
+        transition={{ duration: 1, delay: 2 }}
       >
         <span className="loading">
           <motion.div
