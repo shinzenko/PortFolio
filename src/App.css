@@ -1,50 +1,95 @@
-.image{
+.image {
   width: 120px;
   height: 100px;
   margin-top: -30px;
 }
-.sha{
-background: #0f0f0f;
-box-shadow:  5px 5px 20px #060606,
-             -5px -5px 10px #181818;
+.sha {
+  background: #0f0f0f;
+  box-shadow: 5px 5px 20px #060606, -5px -5px 10px #181818;
 }
-.back:hover{
+.back:hover {
   transform: rotateZ(-2.5deg);
-  transition:transform 0.5s ease-in 3s normal;
+  transition: transform 0.5s ease-in 3s normal;
 }
 
-.btn_xp:hover > span{
-  color: rgba(255,1,79,0.8);
+.btn_xp:hover > span {
+  color: rgba(255, 1, 79, 0.8);
 }
 
-.btn_xp:focus{
-  border-left: 1px solid rgba(255,1,79,1);
+.btn_xp:focus {
+  border-left: 1px solid rgba(255, 1, 79, 1);
 }
 
-.arrow{
+.arrow {
   rotate: 45deg;
   width: 10px;
 }
 
-.shad{
-  box-shadow:  5px 5px 15px #1f1f1f,
-               -5px -5px 15px #1f1f1f;
+.shad {
+  box-shadow: 5px 5px 15px #1f1f1f, -5px -5px 15px #1f1f1f;
 }
-:root{
-  scrollbar-color:#242424 #121212;
+:root {
+  scrollbar-color: #242424 #121212;
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
 .hide {
   transform: translateY(-110px);
 }
-.top{
+.top {
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   background: rgba(0, 0, 0, 0.25);
 }
 
-.end{
+.end {
   justify-content: flex-end;
 }
+:root {
+  --width: blue;
+}
+.main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: white;
+}
+.content_box {
+  font-family: sans-serif;
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121212;
+}
+* {
+  margin: 0;
+}
+.progress_bar {
+  width: 300px;
+  position: relative;
+  height: 50px;
+  background-color: grey;
+}
+.filled_progress {
+  position: absolute;
+  background-color: rgb(255, 1, 79);
+  width: var(--width);
+  height: 50px;
+}
 
+.percentage {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: rgb(255, 1, 79);
+}
+
+.loading {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: rgb(255, 1, 79);
+}

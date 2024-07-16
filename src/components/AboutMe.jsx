@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const AboutMe = () => {
   return (
     <div
-      className="mx-auto w-full mt-[7rem] bg-[#121212] px-20 md:px-5"
+      className="mx-auto w-full pt-[7rem] bg-[#121212] px-20 md:px-5"
       id="About Me"
     >
       <div className="flex items-center">
