@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
+//import { glitchText } from "../effect/glitch";
 const Project = () => {
   const { scrollYProgress } = useScroll();
   const scaleTransform = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
@@ -51,7 +52,11 @@ const Project = () => {
               <div className="bg[#242424] -ml-[2.5rem]">
                 <div className="lg:mx-6">
                   <div className="flex items-center ">
-                    <h1 className="text-[rgb(255,1,79)] text-[3rem] transition-all duration-500 -mt-3 mb-3 md:text-[2rem]">
+                    <h1
+                      //onMouseOver={(e) => glitchText(e)}
+                      className="text-[rgb(255,1,79)] text-[3rem] transition-all duration-500 -mt-3 mb-3 md:text-[2rem]"
+                      data-value={project.title}
+                    >
                       {project.title}
                     </h1>
                     <div className="flex items-center justify-center ml-20 md:-mt-1">

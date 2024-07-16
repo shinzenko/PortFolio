@@ -3,6 +3,10 @@
   height: 100px;
   margin-top: -30px;
 }
+.loader-image {
+  width: 150px;
+  height: 120px;
+}
 .sha {
   background: #0f0f0f;
   box-shadow: 5px 5px 20px #060606, -5px -5px 10px #181818;
@@ -54,7 +58,7 @@
   justify-content: center;
   height: 100vh;
   overflow-y: hidden;
-  background-color: white;
+  background-color: #2d2d2d;
 }
 .content_box {
   font-family: sans-serif;

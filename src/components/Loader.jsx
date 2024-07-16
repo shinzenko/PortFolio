@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "../App.css";
+import file from "../assets/file.svg";
 const Loader = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -16,18 +17,21 @@ const Loader = () => {
     };
   });
   return (
-    <div className="main_container shad">
+    <div className="main_container ">
       <motion.div
         layout
-        className="content_box"
+        className="content_box shad"
         initial={{ scale: 1 }}
-        animate={{ scale: 1.25 }}
+        animate={{
+          scale: 1.25,
+          borderRadius: ["25px", "20px", "20px", "10px", "0px"],
+        }}
         transition={{ duration: 0.5, delay: 2.3 }}
       >
         <span className="loading">
-          Loading<span className="loader__dot">.</span>
-          <span className="loader__dot">.</span>
-          <span className="loader__dot">.</span>
+          <div className="logo">
+            <img src={file} alt="logo" className="loader-image" />
+          </div>
         </span>
         <div className="progress_bar">
           <div
