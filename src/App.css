@@ -70,7 +70,7 @@
   margin: 0;
 }
 .progress_bar {
-  width: 300px;
+  width: 250px;
   position: relative;
   height: 50px;
   background-color: grey;
@@ -78,7 +78,6 @@
 .filled_progress {
   position: absolute;
   background-color: rgb(255, 1, 79);
-  width: var(--width);
   height: 50px;
 }
 

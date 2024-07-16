@@ -6,7 +6,6 @@ const Loader = () => {
   useEffect(() => {
     const myInterval = setInterval(function () {
       if (count === 100) {
-        console.log(count);
         clearInterval(myInterval);
         return;
       }
@@ -27,7 +26,10 @@ const Loader = () => {
       >
         <span className="loading">Loading ...</span>
         <div className="progress_bar">
-          <div className="filled_progress" style={{ width: count * 3 }}></div>
+          <div
+            className={`filled_progress `}
+            style={{ width: count * 2.5 }}
+          ></div>
         </div>
         <span className="percentage">{count}%</span>
       </motion.div>

@@ -7,7 +7,7 @@ export const NavBar = () => {
       className={`z-[999] w-full px-20 py-5 -mb-8 font-['Neue_Montreal'] flex justify-between item-center md:justify-center bg-[#121212]`}
     >
       <motion.div
-        initial={{ opacity: 0, y: 15 }}
+        initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
@@ -20,7 +20,7 @@ export const NavBar = () => {
           (item, index) => {
             return (
               <motion.a
-                initial={{ opacity: 0, y: 15 }}
+                initial={{ opacity: 0, y: -15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
