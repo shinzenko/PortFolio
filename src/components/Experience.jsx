@@ -19,7 +19,7 @@ const Experience = () => {
   };
   const scaleTransform = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
-    <section id="Experience" className="pt-[7rem] bg-[#121212]">
+    <section id="Experience" className="mt-[7rem] bg-[#121212]">
       <motion.div
         ref={experience}
         style={{ opacity: scaleTransform }}
