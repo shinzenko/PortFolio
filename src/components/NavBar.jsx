@@ -1,6 +1,7 @@
 import file from "../assets/file.svg";
 import "../App.css";
 import { motion } from "framer-motion";
+import { glitchText } from "../effect/glitch";
 export const NavBar = () => {
   return (
     <div
@@ -15,7 +16,7 @@ export const NavBar = () => {
       >
         <img src={file} alt="logo" className="image" />
       </motion.div>
-      <div className="flex gap-10 md:hidden">
+      <div className="flex gap-10 md:hidden uppercase">
         {["Projects", "About Me", "Experience", "Contact Me"].map(
           (item, index) => {
             return (
@@ -27,8 +28,10 @@ export const NavBar = () => {
                 key={index}
                 className={`text-lg capitalize font-light hover:text-[rgb(255,1,79)] cursor-pointer hover:scale-[1.05] transition-all`}
                 href={`#${item}`}
+                data-value={`${item.toUpperCase()}`}
+                onMouseOver={(e) => glitchText(e)}
               >
-                {item}
+                {item.toUpperCase()}
               </motion.a>
             );
           }
