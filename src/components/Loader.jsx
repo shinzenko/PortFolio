@@ -24,7 +24,11 @@ const Loader = () => {
         animate={{ scale: 1.25 }}
         transition={{ duration: 0.5, delay: 2.3 }}
       >
-        <span className="loading">Loading ...</span>
+        <span className="loading">
+          Loading<span className="loader__dot">.</span>
+          <span className="loader__dot">.</span>
+          <span className="loader__dot">.</span>
+        </span>
         <div className="progress_bar">
           <div
             className={`filled_progress `}
