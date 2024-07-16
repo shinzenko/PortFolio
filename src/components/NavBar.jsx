@@ -16,7 +16,7 @@ export const NavBar = () => {
       >
         <img src={file} alt="logo" className="image" />
       </motion.div>
-      <div className="flex gap-10 md:hidden uppercase">
+      <div className="flex gap-5 md:hidden uppercase">
         {["Projects", "About Me", "Experience", "Contact Me"].map(
           (item, index) => {
             return (
@@ -26,7 +26,7 @@ export const NavBar = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 key={index}
-                className={`text-lg capitalize font-light hover:text-[rgb(255,1,79)] cursor-pointer hover:scale-[1.05] transition-all`}
+                className={`text-md capitalize font-light hover:text-[rgb(255,1,79)] cursor-pointer hover:scale-[1.05] transition-all w-[12.5vw]`}
                 href={`#${item}`}
                 data-value={`${item.toUpperCase()}`}
                 onMouseOver={(e) => glitchText(e)}
