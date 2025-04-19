@@ -49,4 +49,27 @@ export const data = [
       },
     ],
   },
+  {
+    id: 3,
+    button: "Exceeder",
+    company: "Exceeder",
+    role: "FrontEnd Developer (Intern)",
+    from: "Sept 2024",
+    to: "current",
+    url: "",
+    task: [
+      {
+        id: 1,
+        work: "Developed a complex web application using React components and state management to improve user experience, resulting in a 15% increase in engagement.",
+      },
+      {
+        id: 2,
+        work: "Designed Multiple dynamic and browser compatible pages using HTML5,CSS3,React,Redux(js).",
+      },
+      {
+        id: 3,
+        work: "Designed RESTful APIs to handle requests effeciently",
+      },
+    ],
+  },
 ];
