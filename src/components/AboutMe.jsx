@@ -34,6 +34,7 @@ const AboutMe = () => {
             >
               <li className="mr-4">React js</li>
               <li className="mr-4">Javascript (ES6+)</li>
+              <li className="mr-4">Python</li>
               <li className="mr-4">HTML</li>
               <li className="mr-4">SQL</li>
               <li className="mr-4">CSS</li>
